@@ -4,8 +4,8 @@ Stream Deck用のSwitchBotライト制御スクリプト集
 
 ## デバイス構成
 
-- **デスクライト**: D83BDA175836
-- **テープライト**: 48CA43C5957A
+- **デスクライト**: SwitchBot RGB電球
+- **テープライト**: SwitchBot LEDテープライト
 
 ## ファイル構成
 
