@@ -1,0 +1,9 @@
+# 認証情報
+.env
+
+# トークンファイル
+*.token
+hue_tokens.json
+
+# ログファイル
+*.log

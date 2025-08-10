@@ -1,0 +1,19 @@
+# Environment variables
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+
+# State files
+.aircon_state
+*.state
+
+# Backup files
+*.bak
+*~
