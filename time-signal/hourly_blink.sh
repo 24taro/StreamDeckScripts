@@ -1,9 +1,16 @@
 #!/bin/bash
 
 # SwitchBot API設定
-API_TOKEN="4c9fe1d31dcba07229d811bb280e0b2a4ada6cc89167649271ec9067a6b041bb9da38c6c417b30c04a514e08d322e9ec"
-DESK_LIGHT_ID="D83BDA175836"
-TAPE_LIGHT_ID="48CA43C5957A"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+SWITCHBOT_DIR="$(dirname "$SCRIPT_DIR")/switchbot-lights"
+
+if [ -f "$SWITCHBOT_DIR/.env" ]; then
+    source "$SWITCHBOT_DIR/.env"
+fi
+
+API_TOKEN="${SWITCHBOT_API_TOKEN}"
+DESK_LIGHT_ID="${DESK_LIGHT_ID}"
+TAPE_LIGHT_ID="${TAPE_LIGHT_ID}"
 
 
 # 点滅パターン（3回点滅 - 現在の色のまま）

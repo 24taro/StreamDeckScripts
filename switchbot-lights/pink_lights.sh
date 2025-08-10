@@ -1,8 +1,14 @@
 #!/bin/bash
 
-API_TOKEN="4c9fe1d31dcba07229d811bb280e0b2a4ada6cc89167649271ec9067a6b041bb9da38c6c417b30c04a514e08d322e9ec"
-DESK_LIGHT_ID="D83BDA175836"
-TAPE_LIGHT_ID="48CA43C5957A"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+if [ -f "$SCRIPT_DIR/.env" ]; then
+    source "$SCRIPT_DIR/.env"
+fi
+
+API_TOKEN="${SWITCHBOT_API_TOKEN}"
+DESK_LIGHT_ID="${DESK_LIGHT_ID}"
+TAPE_LIGHT_ID="${TAPE_LIGHT_ID}"
 
 echo "ライトをピンク色に設定中..."
 
